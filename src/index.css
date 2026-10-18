@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/BeVietnamPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/BeVietnamPro-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/BeVietnamPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/PlayfairDisplay-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 600;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/PlayfairDisplay-SemiBoldItalic.ttf') format('truetype');
+}
+
+@theme {
+  --font-sans: 'Be Vietnam Pro', sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+@layer base {
+  html, body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+
+  /* Offset for fixed navbar when jumping to anchor ids */
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.font-sans {
+  font-family: 'Be Vietnam Pro', sans-serif !important;
+}
+
+@keyframes hotlinePulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 12px rgba(239, 68, 68, 0);
+  }
+}
+
+@keyframes emeraldPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+}
+
+.animate-hotline-pulse {
+  animation: hotlinePulse 2s infinite ease-in-out;
+}
+
+.animate-emerald-pulse {
+  animation: emeraldPulse 2.2s infinite ease-in-out;
+}

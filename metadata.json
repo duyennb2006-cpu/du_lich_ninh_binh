@@ -1,0 +1,6 @@
+{
+  "name": "Ninh Binh Travel - Cẩm Nang Du Lịch Danh Thắng",
+  "description": "Khám phá Ninh Bình - Tuyệt đỉnh danh thắng Tràng An, Phố cổ Hoa Lư, Chùa Bích Động, đặc sản ẩm thực dê núi cơm cháy và dịch vụ thuê xe, lịch trình trọn gói.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
